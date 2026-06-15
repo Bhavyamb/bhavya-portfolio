@@ -1,197 +1,133 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavya M B | Backend Developer</title>
+    <title>Bhavya Portfolio</title>
 
-```
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-```
-
+    <!-- Scroll animation library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
 
+<!-- PARTICLES BACKGROUND -->
+<div id="particles"></div>
+
+<!-- NAV -->
 <nav>
-    <div class="logo">Bhavya M B</div>
-
-```
-<ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-```
-
+    <div class="logo">Bhavya MB</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
+    <div class="hero-content">
 
-```
-<div class="hero-content">
+        <img src="assets/image.jpg" alt="profile">
 
-    <img src="assets/image.jpg" alt="Bhavya">
+        <h1>Bhavya M B</h1>
+        <h2>Backend Developer</h2>
 
-    <h1>Bhavya M B</h1>
+        <p>
+            Backend Developer specializing in scalable APIs, Flask systems,
+            and high-performance backend architecture.
+        </p>
 
-    <h2>Backend Developer</h2>
+        <div class="buttons">
+            <a href="assets/resume.pdf" class="btn">Download Resume</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
 
-    <p>
-        Backend Developer with experience in scalable backend services,
-        REST APIs, infrastructure integration, and test-driven development.
-    </p>
-
-    <div class="buttons">
-        <a href="assets/resume.pdf" class="btn">Download Resume</a>
-        <a href="#contact" class="btn-outline">Contact Me</a>
     </div>
-
-</div>
-```
-
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-
-```
-<h2>About Me</h2>
-
-<div class="card">
-    <p>
-        I am a Backend Developer currently working at Equicom Technologies Pvt Ltd.
-        My expertise includes Python, Flask, REST APIs, database integration,
-        backend architecture, and software development. I enjoy building scalable
-        solutions and solving real-world technical challenges.
-    </p>
-</div>
-```
-
+    <h2>About Me</h2>
+    <div class="card">
+        Passionate backend developer building scalable systems using Python, Flask,
+        REST APIs, and database-driven architectures.
+    </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
+    <h2>Tech Stack</h2>
 
-```
-<h2>Tech Stack</h2>
-
-<div class="skills">
-
-    <span>Python</span>
-    <span>Flask</span>
-    <span>REST APIs</span>
-    <span>Java</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Git</span>
-    <span>GitHub</span>
-    <span>MySQL</span>
-    <span>PgAdmin</span>
-    <span>Unit Testing</span>
-    <span>TDD</span>
-
-</div>
-```
-
+    <div class="skills">
+        <span>Python</span><span>Flask</span><span>REST APIs</span>
+        <span>Java</span><span>JavaScript</span><span>MySQL</span>
+        <span>PostgreSQL</span><span>Git</span><span>Docker</span>
+    </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
+    <h2>Experience</h2>
 
-```
-<h2>Experience</h2>
+    <div class="timeline">
+        <div class="card">
+            <h3>Backend Developer</h3>
+            <h4>Equicom Technologies</h4>
+            <p>2026 - Present</p>
+        </div>
 
-<div class="timeline">
-
-    <div class="card">
-
-        <h3>Backend Developer</h3>
-
-        <h4>Equicom Technologies Pvt Ltd</h4>
-
-        <p>Jan 2026 - Present</p>
-
-        <ul>
-            <li>Developed scalable backend services.</li>
-            <li>Built REST APIs from scratch.</li>
-            <li>Integrated internal and external services.</li>
-            <li>Implemented unit testing and TDD.</li>
-            <li>Enhanced backend performance and reliability.</li>
-        </ul>
-
+        <div class="card">
+            <h3>Intern</h3>
+            <h4>GKS Infotech</h4>
+            <p>2024</p>
+        </div>
     </div>
-
-    <div class="card">
-
-        <h3>Software Engineer Intern</h3>
-
-        <h4>GKS Infotech Pvt Ltd</h4>
-
-        <p>July 2024</p>
-
-        <ul>
-            <li>Developed hospital booking systems.</li>
-            <li>Implemented authentication modules.</li>
-            <li>Automated database workflows.</li>
-        </ul>
-
-    </div>
-
-</div>
-```
-
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
+    <h2>Projects</h2>
 
-```
-<h2>Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>VisionAlert</h3>
+            <p>AI-based driver assistance system using YOLOv8.</p>
+        </div>
 
-<div class="projects">
+        <div class="project-card">
+            <h3>Student Portal</h3>
+            <p>Activity tracking system with authentication.</p>
+        </div>
 
-    <div class="project-card">
-        <h3>VisionAlert</h3>
-        <p>Real-time driver assistance system using YOLOv8 and Streamlit.</p>
+        <div class="project-card">
+            <h3>Hospital System</h3>
+            <p>Full appointment booking backend system.</p>
+        </div>
     </div>
-
-    <div class="project-card">
-        <h3>Student Portal</h3>
-        <p>Activity point calculation portal with secure document management.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Hospital Appointment Booking System</h3>
-        <p>Appointment booking platform with authentication and database integration.</p>
-    </div>
-
-</div>
-```
-
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
+    <h2>Contact</h2>
 
-```
-<h2>Contact</h2>
-
-<div class="card contact-card">
-
-    <p>📧 bhavyamb16@gmail.com</p>
-    <p>📱 8891208239</p>
-    <p>📍 Kochi, Kerala</p>
-    <p>💼 LinkedIn: linkedin.com/in/Bhavyamb</p>
-
-</div>
-```
-
+    <div class="card contact-card">
+        <p>📧 email@gmail.com</p>
+        <p>📱 0000000000</p>
+        <p>📍 Kochi, Kerala</p>
+        <p>💼 LinkedIn: linkedin.com</p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Bhavya M B</p>
+    Built with ❤️ by Bhavya
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
