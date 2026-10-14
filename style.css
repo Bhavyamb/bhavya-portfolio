@@ -647,92 +647,102 @@ footer {
 
   nav {
     position: sticky;
-    padding: 12px 16px;
+    min-height: auto;
+    padding: 10px 12px 12px;
   }
 
   .logo {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     letter-spacing: 0.06em;
   }
 
   nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     width: 100%;
-    gap: 3px;
-    justify-content: flex-start;
+    gap: 4px;
+    justify-content: stretch;
   }
 
   nav a {
-    padding: 5px 8px;
-    font-size: 0.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 30px;
+    padding: 6px 4px;
+    font-size: 0.68rem;
+    text-align: center;
   }
 
   .theme-toggle {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
   }
 
   .hero {
-    padding: 58px 14px 50px;
+    padding: 42px 12px 46px;
   }
 
   .hero-card {
-    padding: 22px 16px 18px;
+    padding: 20px 14px 18px;
     border-radius: 20px;
   }
 
   .hero-card img {
-    width: 110px;
-    height: 110px;
-    border-radius: 22px;
+    width: 104px;
+    height: 104px;
+    border-radius: 20px;
   }
 
   .hero h1 {
-    margin-top: 22px;
-    font-size: clamp(2.1rem, 13vw, 3.2rem);
-    letter-spacing: -0.06em;
+    margin-top: 20px;
+    font-size: clamp(2rem, 12vw, 3rem);
+    letter-spacing: -0.05em;
   }
 
   .hero h2 {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   .subtitle {
     display: block;
     max-width: 100%;
     border-radius: 12px;
-    font-size: 0.68rem;
+    font-size: 0.66rem;
     line-height: 1.7;
   }
 
   .tech-stack {
-    gap: 8px;
+    gap: 7px;
   }
 
   .tech-stack span {
-    letter-spacing: 0.04em;
-    font-size: 0.63rem;
+    letter-spacing: 0.03em;
+    font-size: 0.6rem;
     padding: 6px 8px;
   }
 
   .system-panel {
-    padding: 12px 12px;
+    padding: 12px;
     border-radius: 14px;
   }
 
   .panel-body {
     gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .panel-body div {
-    padding: 10px 10px;
+    padding: 10px 8px;
   }
 
   .panel-body strong {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
   }
 
   .hero-text {
-    font-size: 0.91rem;
+    font-size: 0.9rem;
     line-height: 1.8;
   }
 
@@ -745,11 +755,11 @@ footer {
   .btn,
   .btn-outline {
     width: 100%;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
   }
 
   .stats {
-    width: calc(100% - 32px);
+    width: calc(100% - 24px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
@@ -757,10 +767,13 @@ footer {
   .stat { padding: 18px 10px; }
 
   section:not(.hero):not(.stats) {
-    padding: 52px 18px;
+    padding: 52px 16px 36px;
   }
 
-  section h2 { margin-bottom: 24px; }
+  section h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
 
   .projects {
     grid-template-columns: 1fr;
@@ -769,20 +782,20 @@ footer {
 
   .project,
   .card {
-    padding: 20px 16px;
+    padding: 18px 14px;
     border-radius: 17px;
   }
 }
 
 @media (max-width: 420px) {
   nav ul {
-    gap: 2px;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
   }
 
   nav a {
-    padding: 4px 7px;
-    font-size: 0.68rem;
+    padding: 5px 6px;
+    font-size: 0.66rem;
   }
 
   .stats {
@@ -790,19 +803,23 @@ footer {
   }
 
   .hero h1 {
-    font-size: clamp(1.9rem, 15vw, 2.7rem);
+    font-size: clamp(1.8rem, 14vw, 2.6rem);
   }
 
   .hero-text,
   .card p,
   .project p,
   .card li {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
   }
 
   .card h3,
   .project h3 {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
+  }
+
+  .panel-body {
+    grid-template-columns: 1fr;
   }
 }
 
