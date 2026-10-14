@@ -63,10 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let hideTimer = null;
 
     const assetCandidates = [
-      './assets/Screenshot 2026-10-14 230201.png',
-      './assets/portfolio-bot-avatar.svg',
+      './assets/portfolio-avatar-placeholder.svg',
       './assets/portfolio-avatar-3d.svg',
-      './assets/portfolio-avatar-placeholder.svg'
+      './assets/portfolio-bot-avatar.svg'
     ];
 
     const loadAsset = () => {
