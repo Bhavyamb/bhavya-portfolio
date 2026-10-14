@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Local dev
+node_modules/
+.cache/
+tmp/
+temp/
+
+# Build artifacts
+dist/
+build/
