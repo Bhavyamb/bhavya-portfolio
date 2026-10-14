@@ -1,35 +1,35 @@
 :root {
-  --bg: #0b1020;
-  --bg-strong: #070d1b;
-  --surface: #11182b;
-  --surface-2: #151f35;
-  --text: #edf2ff;
-  --muted: #9aa8c2;
-  --line: rgba(164, 184, 221, 0.16);
-  --accent: #83f0c2;
-  --accent-2: #82aaff;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+  --bg: #09131d;
+  --bg-strong: #0d1d2a;
+  --surface: #101d2d;
+  --surface-2: #13293d;
+  --text: #eef7ff;
+  --muted: #a7b9cf;
+  --line: rgba(145, 171, 210, 0.18);
+  --accent: #7dd3fc;
+  --accent-2: #a78bfa;
+  --shadow: 0 28px 80px rgba(3, 9, 18, 0.42);
   --radius: 22px;
   --content: 1120px;
-  --button-text: #071b18;
-  --nav-bg: rgba(11, 16, 32, 0.84);
-  --card-bg: linear-gradient(145deg, rgba(21, 31, 53, 0.92), rgba(15, 23, 41, 0.94));
+  --button-text: #08151d;
+  --nav-bg: rgba(10, 18, 27, 0.8);
+  --card-bg: linear-gradient(145deg, rgba(18, 28, 40, 0.96), rgba(11, 18, 29, 0.94));
 }
 
 body.light-theme {
-  --bg: #f4f8fb;
-  --bg-strong: #edf5fb;
+  --bg: #f3f7fb;
+  --bg-strong: #edf4ff;
   --surface: #ffffff;
-  --surface-2: #edf3ff;
-  --text: #0f172a;
-  --muted: #475569;
-  --line: rgba(15, 23, 42, 0.08);
-  --accent: #0f766e;
-  --accent-2: #2563eb;
-  --shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+  --surface-2: #ebf3ff;
+  --text: #132236;
+  --muted: #54657f;
+  --line: rgba(19, 34, 54, 0.08);
+  --accent: #0ea5e9;
+  --accent-2: #8b5cf6;
+  --shadow: 0 22px 52px rgba(18, 34, 54, 0.1);
   --button-text: #ffffff;
   --nav-bg: rgba(255, 255, 255, 0.8);
-  --card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 252, 0.98));
+  --card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(243, 248, 255, 0.98));
 }
 
 * {
@@ -47,11 +47,11 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background:
-    radial-gradient(ellipse at 85% 0%, rgba(75, 112, 195, 0.16), transparent 36rem),
-    radial-gradient(ellipse at 0% 40%, rgba(67, 210, 165, 0.07), transparent 32rem),
+    radial-gradient(ellipse at top right, rgba(138, 180, 255, 0.18), transparent 32rem),
+    radial-gradient(ellipse at bottom left, rgba(94, 234, 212, 0.12), transparent 27rem),
     var(--bg);
   color: var(--text);
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
   font-size: 15px;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
@@ -91,9 +91,14 @@ nav {
   gap: 24px;
   padding: 16px max(5%, calc((100% - var(--content)) / 2));
   border-bottom: 1px solid var(--line);
-  background: var(--nav-bg);
+  background: rgba(9, 17, 26, 0.78);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 12px 35px rgba(3, 9, 17, 0.12);
+}
+
+body.light-theme nav {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .logo {
@@ -161,18 +166,27 @@ nav a:focus-visible {
 }
 
 .hero-card {
-  width: min(100%, 850px);
+  width: min(100%, 900px);
+  padding: clamp(28px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(14, 23, 35, 0.76), rgba(10, 18, 28, 0.9));
+  box-shadow: var(--shadow);
   animation: rise-in 0.75s ease both;
 }
 
+body.light-theme .hero-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(239, 245, 255, 0.92));
+}
+
 .hero-card img {
-  width: 148px;
-  height: 148px;
+  width: 152px;
+  height: 152px;
   object-fit: cover;
-  border: 1px solid rgba(131, 240, 194, 0.55);
-  border-radius: 32px;
+  border: 2px solid rgba(94, 234, 212, 0.5);
+  border-radius: 28px;
   background: var(--surface);
-  box-shadow: 0 0 0 8px rgba(131, 240, 194, 0.055), var(--shadow);
+  box-shadow: 0 0 0 8px rgba(94, 234, 212, 0.08), var(--shadow);
 }
 
 .hero h1 {
@@ -225,13 +239,13 @@ nav a:focus-visible {
 }
 
 .system-panel {
-  width: min(100%, 520px);
+  width: min(100%, 560px);
   margin: 24px auto 0;
   padding: 16px 18px;
   border: 1px solid var(--line);
   border-radius: 18px;
-  background: rgba(10, 14, 28, 0.52);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 20px 40px rgba(0,0,0,0.12);
+  background: rgba(15, 23, 32, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), 0 18px 38px rgba(0,0,0,0.12);
 }
 
 body.light-theme .system-panel {
@@ -312,30 +326,31 @@ body.light-theme .system-panel {
 .btn,
 .btn-outline {
   display: inline-flex;
-  min-height: 48px;
+  min-height: 50px;
   align-items: center;
   justify-content: center;
   gap: 9px;
   margin: 0;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border: 1px solid transparent;
-  border-radius: 12px;
+  border-radius: 14px;
   font-size: 0.9rem;
   font-weight: 800;
   text-decoration: none;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .btn {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: var(--button-text);
-  box-shadow: 0 8px 26px rgba(131, 240, 194, 0.12);
+  box-shadow: 0 15px 36px rgba(94, 234, 212, 0.18);
 }
 
 .btn-outline {
   border-color: var(--line);
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
 }
 
 .btn:hover,
@@ -426,7 +441,7 @@ section h2::after {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--card-bg);
-  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 14px 38px rgba(1, 8, 18, 0.12);
 }
 
 .card {
