@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="mascot-character" aria-label="Portfolio assistant avatar">
         <div class="mascot-shadow"></div>
         <div class="mascot-head">
-          <img class="mascot-asset" alt="Portfolio assistant" src="./assets/Screenshot 2026-10-14 230201.png" />
+          <img class="mascot-asset" alt="Portfolio assistant" src="./assets/portfolio-avatar-placeholder.svg" />
         </div>
       </div>
       <button class="mascot-reopen" aria-label="Show helper">Hi</button>
